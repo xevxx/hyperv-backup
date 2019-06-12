@@ -3,12 +3,12 @@ Python3 Hyperv backup script using wbadmin
 
 Tested againt python 3.7.3 on Windows server 2012 R2
 
-## dependencies
+### dependencies
 7zip https://www.7-zip.org/download.html
 python 3 https://www.python.org/downloads/
 wbadmin - part of windows
 
-## installing wbadmin on server
+#### installing wbadmin on server
 Log in to Server01 and open Server Manager.
 Click Manage → Roles and Features.
 Click Next when the Add Roles and Features Wizard appears.
