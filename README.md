@@ -1,5 +1,10 @@
 # Hyperv Backup
-Python3 Hyperv backup script using wbadmin
+Python3 Hyperv backup script using wbadmin - It allows the user to configure local storage, network storage and ftp storage for backups and a maximum age (in days) before autodeleting
+
+The script can be run using 
+```
+python hyperv-backup.py
+```
 
 Tested againt python 3.7.3 on Windows server 2012 R2
 
@@ -21,12 +26,6 @@ This script uses wbadmin to create backup copies of hyperv vms as described in h
 8. Select Restart the destination server automatically if required and click Yes to allow automatic restarts.
 9. Click Install and then click Close
 
-It allows the user to configure local storage, network storage and ftp storage for backups and a maximum age (in days) before autodeleting
-
-The script can be run using 
-```
-python hyperv-backup.py
-```
 
 # Configuration
 All configurable settings are located in the Setting section of the script. All are marked with '*change values*'
