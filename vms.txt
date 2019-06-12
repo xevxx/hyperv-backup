@@ -1,0 +1,3 @@
+vmname1|local,network,ftp,20
+vmname2|network,3
+vmname3|local
