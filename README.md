@@ -28,7 +28,7 @@ This script uses wbadmin to create backup copies of hyperv vms as described in h
 
 
 # Configuration
-All configurable settings are located in the Setting section of the script. All are marked with '*change values*'
+All configurable settings are located in the Settings section of the script. All are marked with '*change values*'
 
 The configurable values include:
 
