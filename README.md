@@ -1,12 +1,12 @@
-# hypervbackup
+# Hyperv Backup
 Python3 Hyperv backup script using wbadmin
 
 Tested againt python 3.7.3 on Windows server 2012 R2
 
 ### dependencies
-7zip https://www.7-zip.org/download.html
-python 3 https://www.python.org/downloads/
-wbadmin - part of windows
+- 7zip https://www.7-zip.org/download.html
+- python 3 https://www.python.org/downloads/
+- wbadmin - part of windows
 
 #### installing wbadmin on server
 This script uses wbadmin to create backup copies of hyperv vms as described in https://blogs.msdn.microsoft.com/virtual_pc_guy/2013/02/25/backing-up-hyper-v-virtual-machines-from-the-command-line/
