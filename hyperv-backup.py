@@ -18,7 +18,7 @@ applogger.info('Starting of HyperV Backup: ' + os.environ['COMPUTERNAME'])
 deleteLocal = True # overwritten by vms.txt configuration
 zip7 = r'C:\Program Files\7-Zip\7z.exe' # requires 7zip installed
 direc = os.getcwd()
-file = r'\vms.txt' # file with names of vms to backup with new line separation
+file = r'\vms.ini' # file with names of vms to backup with new line separation
 '''
     vms.txt should be formatted:
     vmname|local,network,ftp,3
