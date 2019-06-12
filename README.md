@@ -21,4 +21,15 @@ it allows the user to configure local storage, network storage and ftp storage f
 
 the script can be run using 
 
-python 
+python hyperv-backup.py
+
+all configurable settings are located in the Setting section of the script. All are marked with '*change values*'
+
+The configurable values include:
+
+Local backup folder and local share folder (WBadmin will only accept network sahre for backing up to, this is gotten round by acessing a local folder using a network share path.
+network backup folder
+ftp settings (tested against Filezilla server with tls enabled)
+email settings (tested against gmail)
+
+The backups can be configured using the vms.ini
