@@ -45,7 +45,7 @@ vms.ini should be formatted:
 vmname1|local,network,ftp,3
 vmname2|network,20
 ```
-vmname separated from options with pipe | symbol
+VM Name separated from options with pipe | symbol
 options are:
   - local = keep local copy
   - network = create network share copy
