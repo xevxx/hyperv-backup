@@ -33,3 +33,29 @@ ftp settings (tested against Filezilla server with tls enabled)
 email settings (tested against gmail)
 
 The backups can be configured using the vms.ini
+
+vms.ini should be formatted:
+vmname|local,network,ftp,3
+vmname seperated from options with pipe symbol
+options are:
+  - local = keep local copy
+  - network = create network share copy
+  - ftp = create ftp copy
+  - 3 = days to keep backups - optional will default to main setting for daysOld
+  
+WBadmin creates a backup folder at the desired local folder (using share path - '\\machinename\sharetolocalfolder'
+this folder is archived to 7z using 7zip command line
+backup folder is deleted
+depending on configuration:
+  - move or copy 7z to network storage
+  - transfer 7z to ftp server using tls
+  - delete local 7z
+
+check each of the three storage locations and delete and older backups older than the configured days old
+Send email of log to desired email address stating success or failures
+
+This is successfully run nightly on multiple servers of my own
+
+ /* This program is free software. It comes without any warranty, to
+ * the extent permitted by applicable law. You can redistribute it
+ * and/or modify it under the terms of MIT licence */
