@@ -24,9 +24,9 @@ This script uses wbadmin to create backup copies of hyperv vms as described in h
 It allows the user to configure local storage, network storage and ftp storage for backups and a maximum age (in days) before autodeleting
 
 The script can be run using 
-'''
+```
 python hyperv-backup.py
-'''
+```
 
 # Configuration
 All configurable settings are located in the Setting section of the script. All are marked with '*change values*'
@@ -42,9 +42,10 @@ The configurable values include:
 The backups can be configured using the vms.ini
 
 vms.ini should be formatted:
-'''
+```
 vmname|local,network,ftp,3
-'''
+vmname2|network,20
+```
 vmname separated from options with pipe | symbol
 options are:
   - local = keep local copy
