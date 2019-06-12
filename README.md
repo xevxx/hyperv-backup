@@ -42,7 +42,7 @@ The backups can be configured using the vms.ini
 
 vms.ini should be formatted:
 ```
-vmname|local,network,ftp,3
+vmname1|local,network,ftp,3
 vmname2|network,20
 ```
 vmname separated from options with pipe | symbol
