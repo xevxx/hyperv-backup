@@ -67,6 +67,6 @@ Send email of log to desired email address stating success or failures
 This is successfully run nightly on multiple servers of my own using task scheduler
 ```
 C:\Windows\System32\cmd.exe
-/c python *path to script*\Hyper-VBackup.py
+/c python *path to script*\hyper-vbackup.py
 ```
 ###### This program is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of MIT licence
