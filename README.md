@@ -64,6 +64,9 @@ Depending on configuration:
 Check each of the three storage locations and delete backups older than the configured days old
 Send email of log to desired email address stating success or failures
 
-This is successfully run nightly on multiple servers of my own
-
+This is successfully run nightly on multiple servers of my own using task scheduler
+```
+C:\Windows\System32\cmd.exe
+/c python *path to script*\Hyper-VBackup.py
+```
 ###### This program is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of MIT licence
