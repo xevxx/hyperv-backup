@@ -139,7 +139,7 @@ with TemporaryFile() as output:
                         ftps.storbinary('STOR ' + vmName + '.' + curTime + '.7z', file123)     # send the file
                         applogger.info('Complete FTP Transfer - ' + vmName)
                     except Exception as e:
-                        applogger.info('Complete FTP Transfer (with captued exception) - ' + vmName)
+                        applogger.info('Complete FTP Transfer (with captured exception) - ' + vmName)
                     finally:
                         file123.close() 
                         ftps.quit()
