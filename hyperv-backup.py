@@ -94,7 +94,7 @@ with TemporaryFile() as output:
             details = line.split('|')
             vmName = details[0].rstrip()
             if len(details) > 1:
-                backUpOptions = details[1].split(',')
+                backUpOptions = details[1].rstrip().split(',')
                 if 'local' in backUpOptions:
                     deleteLocal = False
                 if 'network' in backUpOptions and networkShareSettingsCorrect:
