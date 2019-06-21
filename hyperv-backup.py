@@ -165,6 +165,7 @@ with TemporaryFile() as output:
 quite_old= math.floor(time.time() - daysOld*86400) # three days
 
 def deleteFiles(fileList, delType):
+    global count_deleted_local,count_deleted_network,count_deleted_ftp
     currentTime = math.floor(time.time())
     for fi in fileList:
         file_parts = fi.split('.')
@@ -188,8 +189,10 @@ def deleteFiles(fileList, delType):
                     
                     try:
                         applogger.info('Removing ' + delType + ' Backup ' + str(fi) + ' it\'s over ' + str(daysOld) + ' days old')
-                        if delType == 'local' or delType == 'network':
-                            os.remove(fi)
+                        if delType == 'local':
+                            os.remove(os.path.join(networkSaveLoc, fi)) 
+                        if delType == 'network':
+                            os.remove(os.path.join(netShare, fi))
                         else:
                             ftps.delete(fi)
                     except Exception as e:
