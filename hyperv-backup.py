@@ -20,7 +20,7 @@ zip7 = r'C:\Program Files\7-Zip\7z.exe' # requires 7zip installed
 direc = os.getcwd()
 file = r'\vms.ini' # file with names of vms to backup with new line separation
 '''
-    vms.txt should be formatted:
+    vms.ini should be formatted:
     vmname|local,network,ftp,3
     vmname seperated from options with pipe symbol
     options are:
