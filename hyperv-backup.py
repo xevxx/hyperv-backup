@@ -104,7 +104,7 @@ with TemporaryFile() as output:
                 try:
                     daysKept = int(backUpOptions[-1])
                     daysKeptObj[vmName] = daysKept
-                except ValueError:
+                except Exception as e:
                     daysKeptObj[vmName] = daysOld
                     pass
             else:
@@ -171,11 +171,12 @@ def deleteFiles(fileList, delType):
         file_parts = fi.split('.')
         if len(file_parts) == 4:
             vmName = file_parts[0]
-            try:
+             try:
                 daysKept = int(daysKeptObj[vmName])
                 quite_old = currentTime - daysKept*86400      
-            except ValueError:
-                pass
+            except Exception as e:
+                daysKept = daysOld
+                quite_old = currentTime - daysKept*86400 
             if vmName in tuple(hypervList):
                 timeDate =  file_parts[len(file_parts)-2]
 
